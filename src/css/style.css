@@ -1,0 +1,131 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #eeb399;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.header .logo .title {
+    padding-left: 10px;
+    color: #000;
+}
+
+.header .navegation ul {
+    display: flex;
+    gap: 60px;
+    margin-right: 110px;
+    align-items: center;
+}
+
+.header .navegation ul .principal {
+    /* background-color: #fff; */
+    padding: 5px;
+    /* border-style: groove; */
+    /* border-radius: 10px; */
+    position: relative;
+}
+
+
+.navegation .has-submenu .submenu {
+    font-size: 15px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%; /* Faz ele aparecer logo abaixo do item pai */
+    left: 0;
+    min-width: 150px;
+    /* flex-direction: column; Faz os sub-itens ficarem um abaixo do outro */
+    gap: 0;
+    margin-right: 0;
+    padding: 10px 0px 0px 0px;
+    /* background-color: violet; */
+    border-style: groove;
+
+}
+.navegation .has-submenu:hover .submenu {
+    display: block;
+}
+.navegation .has-submenu .submenu li {
+    /* list-style: disc; */
+    padding: 3px 0px 3px 0px;
+    text-decoration: underline;
+}
+.navegation .has-submenu .seta {
+    /* font-size: 10px; */
+    margin-left: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+.navegation .has-submenu:hover .seta {
+    transform: rotate(-90deg);
+}
+
+.sobre {
+    /* background-color: blueviolet; */
+    padding: 20px;
+    margin: 30px 0px 0px 30px;
+    display: flex;
+    gap: 150px;
+}
+.sobre .infos {
+    max-width: 580px;
+}
+.sobre .infos .title {
+    font-size: 30px;
+    padding: 8px;
+}
+.sobre .infos .about {
+    padding: 8px;
+    line-height: 26px;
+    font-size: 18px;
+}
+.sobre .infos .creators {
+    padding: 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #b9d9ca;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1;
+}
+.footer .contact {
+    max-width: 350px;
+    padding: 20px 0px 20px 20px;
+}
+.footer .contact .title, .footer .contact .address, .footer .contact .email {
+    padding: 5px;
+}
+.footer .developer {
+    padding: 15px 50px 15px 0px;
+}
+.footer .social-medias ul{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    margin-right: 100px;
+}
+.footer .social-medias ul li a i{
+    /* background-color: yellow; */
+    height: 32.5px;
+    width: 32.3px;
+    padding-top: 2px;
+    font-size: 27.3px;
+    text-align: center;
+    border-radius: 10px;
+}
