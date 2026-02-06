@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){emailjs.init("uFDfJXik3bhlf6ldl");})();
+    </script>
 </head>
 <body>
     <main>
@@ -55,21 +59,25 @@
         </header>
         <section class="contato">
             <h2 class="title-contact">Entre em Contato</h2>
-            <form action="https://formspree.io/f/mdalndep" method="post" class="forms">
+            <form id="forms" class="forms">
                 <div class="infos">
-                    <label for="Nome" class="nome">Nome Completo:
-                        <input type="text" name="Nome" id="Nome" required>
+                    <label for="Nome" class="nome">* Nome Completo:
+                        <input type="text" name="Nome" id="Nome" class="inputs">
+                        <p class="obrigatorio desativado">* Campo obrigatório!</p>
                     </label>
-                    <label for="Email" class="email">Email:
-                        <input type="email" name="Email" id="Email" required>
+                    <label for="Email" class="email">* Email:
+                        <input type="email" name="Email" id="Email" class="inputs">
+                        <p class="obrigatorio desativado">* Campo obrigatório!</p>
                     </label>
-                    <label for="Telefone" class="telefone">Telefone:
-                        <input type="number" name="Telefone" id="Telefeone" placeholder="( ) 99999-9999">
+                    <label for="Telefone" class="telefone">* Telefone:
+                        <input type="number" name="Telefone" id="Telefone" placeholder="( ) 99999-9999" class="inputs">
+                        <p class="obrigatorio desativado">* Campo obrigatório!</p>
                     </label>
                 </div>
                 <div class="mensagem">
-                    <label for="Mensagem" class="msg">Nos envie sua Mensagem:
-                        <textarea name="Mensagem" id="Mensagem"></textarea>
+                    <label for="Mensagem" class="msg">* Nos envie sua Mensagem:
+                        <textarea name="Mensagem" id="Mensagem" class="inputs"></textarea>
+                        <p class="obrigatorio desativado">* Campo obrigatório!</p>
                     </label>
                     <button type="submit" class="btn-submit">Enviar</button>
                 </div>
@@ -93,5 +101,6 @@
 
         </footer>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>

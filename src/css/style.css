@@ -198,3 +198,13 @@ main {
     font-size: 17px;
     cursor: pointer;
 }
+
+.contato .forms .obrigatorio {
+    font-size: 11px;
+    padding: 2px;
+    color: #ff0000;
+}
+
+.desativado {
+    display: none;
+}
