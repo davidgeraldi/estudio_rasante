@@ -35,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     formularioValido = false;
                     // Mostra o alerta visual para este campo específico
                     if (msgErro) msgErro.classList.remove("desativado");
+                    // 2. Adiciona a classe de tremer
+                    msgErro.classList.add('shake');
+                    
+                    // 3. Remove a classe após a animação acabar (0.4s) 
+                    // para poder tremer de novo no próximo clique
+                    setTimeout(() => {
+                        msgErro.classList.remove('shake');
+                    }, 400);
                 } 
                 else {
                     // Esconde o alerta se o campo estiver preenchido
