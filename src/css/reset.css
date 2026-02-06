@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz com que padding e bordas não aumentem o tamanho total */
 }
 
 a {
@@ -9,4 +11,17 @@ a {
 
 ul {
     list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
 }

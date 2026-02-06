@@ -56,11 +56,14 @@ main {
 }
 .navegation .has-submenu:hover .submenu {
     display: block;
+    background-color: #fff;
+    width: 250px;
 }
 .navegation .has-submenu .submenu li {
     /* list-style: disc; */
     padding: 3px 0px 3px 0px;
     text-decoration: underline;
+    font-size: 17px;
 }
 .navegation .has-submenu .seta {
     /* font-size: 10px; */
@@ -75,12 +78,13 @@ main {
 .sobre {
     /* background-color: blueviolet; */
     padding: 20px;
-    margin: 30px 0px 0px 30px;
     display: flex;
-    gap: 150px;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
 }
 .sobre .infos {
-    max-width: 580px;
+    max-width: 545px;
 }
 .sobre .infos .title {
     font-size: 30px;
@@ -92,7 +96,7 @@ main {
     font-size: 18px;
 }
 .sobre .infos .creators {
-    padding: 8px;
+    padding: 35px 15px 35px 0px;
     font-size: 17px;
     font-weight: bold;
 }
@@ -101,23 +105,24 @@ main {
     background-color: #b9d9ca;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     flex: 1;
 }
 .footer .contact {
     max-width: 350px;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 0px 20px;
 }
 .footer .contact .title, .footer .contact .address, .footer .contact .email {
     padding: 5px;
 }
 .footer .developer {
-    padding: 15px 50px 15px 0px;
+    padding: 15px 50px 0px 0px;
+    align-self: flex-end;
 }
 .footer .social-medias ul{
     display: flex;
     gap: 20px;
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     margin-right: 100px;
 }
 .footer .social-medias ul li a i{
@@ -128,4 +133,68 @@ main {
     font-size: 27.3px;
     text-align: center;
     border-radius: 10px;
+}
+
+/*estilos pag contato*/
+.contato {
+    padding: 25px;
+}
+.contato .title-contact {
+    padding: 8px;
+    font-size: 30px;
+}
+.contato .forms {
+    display: flex;
+    /* justify-content: center; */
+    /* height: 300px; */
+    gap: 200px;
+}
+.contato .forms label {
+    font-size: 18px;
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 3px;
+}
+.contato .forms .infos input {
+    width: 320px;
+    padding: 5px 0px 0px 0px;
+    border-style: none;
+    border-bottom: ridge;
+}
+.contato .forms .infos {
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    border-radius: 10px;
+    padding: 25px;
+    gap: 15px;
+}
+
+.contato .forms .mensagem {
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 50px;
+    border-style: groove;
+    padding: 25px;
+    border-radius: 10px;
+}
+.contato .forms .mensagem #Mensagem {
+    border-style: none;
+    border-bottom: ridge;
+    border-top: ridge;
+    padding-top: 8px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+}
+.contato .forms .mensagem .btn-submit {
+    width: 200px;
+    height: 50px;
+    align-self: center;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
 }
